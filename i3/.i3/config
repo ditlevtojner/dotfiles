@@ -4,13 +4,13 @@ set $mod Mod4
 
 # [Application Launchers]
 bindsym $mod+Return exec "urxvt"
-bindsym $mod+Shift+w exec "firefox"
-bindsym $mod+Shift+e exec "code"
+bindsym $mod+Shift+w exec "chromium"
+bindsym $mod+Shift+e exec "urxvt -e emacs -nw"
 # use xfontsel to find the font
 # (click fmly[Family] to select a family, pxlsz for pixelsize etc)
 # copy the long string out, note how each menu in xfontself yields an entry in the final font output
 # (-* ===> unset/any)
-bindsym $mod+d exec "dmenu_run -b -nb '#363a4f' -nf '#dee2f8' -sb '#00965d' -fn '-*-terminus-bold-*-*-*-14-*-*-*-*-*-*-*'"
+bindsym $mod+d exec "dmenu_run -b -nb '#363a4f' -nf '#dee2f8' -sb '#00965d' -fn '-*-terminus-bold-*-*-*-18-*-*-*-*-*-*-*'"
 bindsym $mod+Shift+b "xset dpms force off" #disable screen blanking
 bindsym $mod+l exec "i3lock -c 303340"
 
@@ -126,7 +126,7 @@ bar {
 #                   active window on moving focus into its parent container
 
 #						border	backgr.	text	indicator
-client.focused          #00965d #00965d #dbe6ec #a65cba
+client.focused          #3f3d57 #3f3d57 #dbe6ec #a65cba
 client.focused_inactive #3f4f66 #3f4f66 #dbe6ec #0866cb
 client.unfocused		#262f3a #262f3a #dbe6ec #0866cb
 
@@ -134,7 +134,7 @@ client.unfocused		#262f3a #262f3a #dbe6ec #0866cb
 new_window normal 2
 
 #set BG colour
-exec /usr/bin/xsetroot -solid "#303340"
+exec /usr/bin/xsetroot -solid "#3e364d"
 
 exec vmware-user --no-startup-id
 exec nm-applet

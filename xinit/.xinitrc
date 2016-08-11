@@ -47,5 +47,7 @@ fi
 unset WINDOW_MANAGER STARTUP
 exec $WINDOWMANAGER ${1+"$@"}
 
+eval "$(gpg-agent --daemon)"
+
 # call failsafe
 exit 0

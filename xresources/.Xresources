@@ -17,8 +17,6 @@ URxvt*boldFont: xft:Source Code Pro:size=10
 !Xft.rgba: none
 !Xft.hintstyle: hintfull
 
-
-
 ! Scrollbar style - rxvt (default), plain (most compact), next, or xterm
 URxvt.scrollstyle: plain
 
